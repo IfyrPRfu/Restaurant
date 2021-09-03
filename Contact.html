@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<style type="text/css">
+
+		form {
+			padding: 25px;
+			position: center;
+			margin: auto;
+		}
+
+		label {
+			margin: 25%;
+		}
+
+		input[type=text] {
+			align-content: left;
+    		border: 1px solid black;
+    		width: 25%;
+    		margin-top: 5px;
+    		margin-bottom: 5px;
+    		box-sizing: border-box;
+    		font-size: 1.1em;
+		}
+
+		input[type=submit] {
+			margin-left: 25%;
+			margin-right: 25%;
+			margin-top: 30px;
+    		padding: 2px 4px;
+		}
+
+
+		</style>
+	</head>
+	<body>
+
+</script>
+
+	<header>
+		<h1>Super Grill</h1>
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	</header>
+
+	<nav>
+	<p><a href="Home.html">Home</a></p>
+	<p><a href="Menu.html">Menu</a></p>
+	<p><a href="Contact.html" style="color: white; background: red;">Contact Us</a></p>
+	<div class="clear-float"></div>
+	</nav>
+
+	<form action="submit.html" method="POST">
+		<label align="right" required>Name:<input type="text" id="name" name="name" required></label><br>
+		<label>Email:<input type="text" id="email" name="email" required></label><br>
+		<label>Phone:<input type="text" id="phone" name="phone" required></label><br>
+		<label>Reason for Inquiry:
+		<select>
+			<option value="catering" default>Catering</option>
+			<option value="private">Private Party</option>
+			<option value="feedback">Feedback</option>
+			<option value="other">Other</option>
+		</select></label><br>
+		<label>Additional Information:
+		<textarea name="info" optional></textarea></label><br>
+		<label>Have you been to this restaurant?
+		<input type="radio" name="been" value="no">No
+		<input type="radio" name="been" value="yes">Yes</label><br>
+		<label>Best days to contact you:
+		<input type="checkbox" name="contact_date" value="mon">M
+		<input type="checkbox" name="contact_date" value="tue">T
+		<input type="checkbox" name="contact_date" value="wed">W
+		<input type="checkbox" name="contact_date" value="thu">Th
+		<input type="checkbox" name="contact_date" value="fri">F</label><br>
+		<input type="submit" name="submit" value="Send Request">
+
+
+	</form>
+	<footer>
+	<hr>
+	65 Colombia Street NE, Calgary, Canada, T4H 3K3<br>
+	453-496-2158
+	</footer>
+</body>
+</html>
