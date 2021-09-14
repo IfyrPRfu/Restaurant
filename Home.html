@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Home Page</title>
-	<style type="text/css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="vidth=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Home Page</title>
+
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+		<style type="text/css">
 
 	.description {
 		margin: auto;
 		text-align: center;
 	}
 
-	span {
-		font-weight: bold;
-		font-size: 1.1em;
-	}
 
-	div.menu {
+
+	.container-fluid {
 		background-color: lightpink;
-		border-bottom: 2px solid red;
 		padding-bottom: 30px;
 	}
 
-	footer {
-		margin-top: 15px;
-		padding-top: 15px;
-		border-top: 1px solid black ;
-	}
-
-	</style>
-</head>
+		</style>
+	</head>
 
 
 
 <body>
 	<header>
-		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
 		<h1>Super Grill</h1>
+		<h5 class="text-right">Restaurant is opening a new location!</h2>
 	</header>
 
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    	<span class="advertise">We're opening a new location!</span>
+    </div>
+    <div class="carousel-item">
+    	<span class="advertise">We're rolling out our seasonal menu, with special options for this season.</span>
+    </div>
+    <div class="carousel-item">
+    	<span class="advertise">The Drink of the Month is SG Special Brew.</span>
+    </div>
+  </div>
+</div>
 
-	<nav>
-	<p><a href="Home.html" style="color: white; background: red;">Home</a></p>
-	<p><a href="Menu.html">Menu</a></p>
-	<p><a href="Contact.html">Contact Us</a></p>
-	<div class="clear-float"></div>
+
+	<nav class="nav">
+		<a class="btn active badge-pill" href="Home.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></a>
+		<a class="btn badge-pill" href="Menu.html">Menu</a>
+		<a class="btn badge-pill" href="Contact.html">Contact Us</a>
 	</nav>
 
-	<div class="menu">
-	<img src="images/display.jpg" alt="display_picture" style="margin: auto; display: block; padding-top: 30px;" />
-		
-		<p class="description"><span>Restaurant Description</span><br>
-		Our restaurant was found in 2005 and had been serving for the community for over 15 years. We serve the best grill around the town and profoundly renowed by all our customers.
-		</p>
-	</div class="menu">
+	<div class="container-fluid">
+			<div class=intro>
+				<img src="images/display.jpg" alt="display_picture" style="margin: auto; display: block; padding-top: 30px; padding-bottom: 30px;" /></div>
+				<p class="description"><strong>Restaurant Description</strong><br>
+				Our restaurant was found in 2005 and had been serving for the community for over 15 years. We serve the best grill around the town and profoundly renowed by all our customers.</p>
+			</div>
+		</div>
+	</div>
 
 
 	<footer>
 	65 Colombia Street NE, Calgary, Canada, T4H 3K3<br>
 	453-496-2158
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
